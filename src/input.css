@@ -9,3 +9,7 @@
     font-family: "Plus Jakarta Sans", serif;
   }
 }
+
+.heading-unread {
+  @apply after:ml-[6px] after:inline-block after:size-2 after:rounded-full after:bg-red after:content-[''];
+}

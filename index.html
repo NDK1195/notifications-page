@@ -14,7 +14,231 @@
     <link rel="stylesheet" href="./src/output.css" />
     <title>Frontend Mentor | Notifications page</title>
   </head>
-  <body>
+  <body class="grid min-h-dvh bg-very-light-grayish-blue md:place-items-center">
+    <!-- container -->
+    <div
+      class="mx-auto w-full max-w-[730px] bg-white px-4 pb-[29px] pt-6 md:mx-0 md:rounded-[15px] md:px-[30px] md:pb-0 md:pt-[33px] md:shadow-box"
+    >
+      <header class="mb-[31px] flex items-center justify-between">
+        <div class="flex items-center gap-[9px] md:gap-[11px]">
+          <h1
+            class="text-xl font-extrabold leading-none text-very-dark-blue lg:text-2xl"
+          >
+            Notifications
+          </h1>
+          <div
+            class="flex h-[25px] w-8 items-center justify-center rounded-md bg-blue font-extrabold leading-none text-white"
+          >
+            3
+          </div>
+        </div>
+        <button
+          class="cursor-pointer text-sm font-medium leading-none text-dark-grayish-blue transition-colors hover:text-blue md:text-base"
+          id="btn-mark-all"
+        >
+          Mark all as read
+        </button>
+      </header>
+
+      <main class="flex flex-col gap-[10px] md:gap-2">
+        <!-- notification -->
+        <div
+          class="notifications flex cursor-pointer gap-[13px] rounded-lg bg-very-light-grayish-blue p-4 md:gap-[19px] md:pb-[17px] md:pl-5 md:pt-[18px]"
+        >
+          <img
+            src="./images/avatar-mark-webber.webp"
+            alt="avatar mark webber"
+            class="size-[39px] rounded-full border border-black/5 md:size-[45px]"
+          />
+          <div class="flex flex-col gap-[3px] md:gap-1">
+            <h2
+              class="heading-unread text-sm font-medium text-dark-grayish-blue md:text-base"
+            >
+              <span
+                class="cursor-pointer font-extrabold text-very-dark-blue transition-colors hover:text-blue"
+                >Mark Webber</span
+              >&nbsp;&nbsp;reacted to your recent post&nbsp;&nbsp;<span
+                class="cursor-pointer font-bold transition-colors hover:text-blue"
+                >My first tournament today!</span
+              >
+            </h2>
+            <p class="text-sm font-medium text-grayish-blue md:text-base">
+              1m ago
+            </p>
+          </div>
+        </div>
+        <!-- notification -->
+
+        <!-- notification -->
+        <div
+          class="notifications flex cursor-pointer gap-[13px] rounded-lg bg-very-light-grayish-blue p-4 md:gap-[19px] md:pb-[17px] md:pl-5 md:pt-[18px]"
+        >
+          <img
+            src="./images/avatar-angela-gray.webp"
+            alt="avatar angela gray"
+            class="size-[39px] rounded-full border border-black/5 md:size-[45px]"
+          />
+          <div class="flex flex-col gap-[3px] md:gap-1">
+            <h2
+              class="heading-unread text-sm font-medium text-dark-grayish-blue md:text-base"
+            >
+              <span
+                class="cursor-pointer font-extrabold text-very-dark-blue transition-colors hover:text-blue"
+                >Angela Gray</span
+              >&nbsp;&nbsp;followed you
+            </h2>
+            <p class="text-sm font-medium text-grayish-blue md:text-base">
+              5m ago
+            </p>
+          </div>
+        </div>
+        <!-- notification -->
+
+        <!-- notification -->
+        <div
+          class="notifications flex cursor-pointer gap-[13px] rounded-lg bg-very-light-grayish-blue p-4 md:gap-[19px] md:pb-[17px] md:pl-5 md:pt-[18px]"
+        >
+          <img
+            src="./images/avatar-jacob-thompson.webp"
+            alt="avatar jacob thompson"
+            class="size-[39px] rounded-full border border-black/5 md:size-[45px]"
+          />
+          <div class="flex flex-col gap-[3px] md:gap-1">
+            <h2
+              class="heading-unread text-sm font-medium text-dark-grayish-blue md:text-base"
+            >
+              <span
+                class="cursor-pointer font-extrabold text-very-dark-blue transition-colors hover:text-blue"
+                >Jacob Thompson</span
+              >&nbsp;&nbsp;has joined your group&nbsp;&nbsp;<span
+                class="cursor-pointer font-bold text-blue transition-all hover:font-extrabold"
+                >Chess Club</span
+              >
+            </h2>
+            <p class="text-sm font-medium text-grayish-blue md:text-base">
+              1 day ago
+            </p>
+          </div>
+        </div>
+        <!-- notification -->
+
+        <!-- notification -->
+        <div
+          class="notifications flex cursor-pointer gap-[13px] rounded-lg p-4 pr-3 md:gap-[19px] md:px-5 md:pb-[17px] md:pt-[18px]"
+        >
+          <img
+            src="./images/avatar-rizky-hasanuddin.webp"
+            alt="avatar rizky hasanuddin"
+            class="size-[39px] rounded-full border border-black/5 md:size-[45px]"
+          />
+          <div class="flex flex-col gap-[3px] md:gap-1">
+            <h2 class="text-sm font-medium text-dark-grayish-blue md:text-base">
+              <span
+                class="cursor-pointer font-extrabold text-very-dark-blue transition-colors hover:text-blue"
+                >Rizky Hasanuddin</span
+              >&nbsp;&nbsp;sent you a private message
+            </h2>
+            <p class="text-sm font-medium text-grayish-blue md:text-base">
+              5 days ago
+            </p>
+            <div
+              class="mt-[9px] rounded-[5px] border border-light-grayish-blue-2 bg-white p-4 text-sm font-medium text-dark-grayish-blue transition-colors hover:bg-light-grayish-blue-1 md:p-5 md:pt-[17px] md:text-base"
+            >
+              Hello, thanks for setting up the Chess Club. I’ve been a member
+              for a few weeks now and I’m already having lots of fun and
+              improving my game.
+            </div>
+          </div>
+        </div>
+        <!-- notification -->
+
+        <!-- notification -->
+        <div
+          class="notifications flex cursor-pointer justify-between gap-[29px] rounded-lg p-4 pr-3 md:px-5 md:pb-[17px] md:pt-[18px]"
+        >
+          <div class="flex gap-[13px] md:gap-[19px]">
+            <img
+              src="./images/avatar-kimberly-smith.webp"
+              alt="avatar kimberly smith"
+              class="size-[39px] rounded-full border border-black/5 md:size-[45px]"
+            />
+            <div class="flex flex-col gap-[3px] md:gap-1">
+              <h2
+                class="text-sm font-medium text-dark-grayish-blue md:text-base"
+              >
+                <span
+                  class="cursor-pointer font-extrabold text-very-dark-blue transition-colors hover:text-blue"
+                  >Kimberly Smith</span
+                >&nbsp;&nbsp;commented on your picture
+              </h2>
+              <p class="text-sm font-medium text-grayish-blue md:text-base">
+                1 week ago
+              </p>
+            </div>
+          </div>
+          <img
+            src="./images/image-chess.webp"
+            alt="image chess"
+            class="size-[39px] md:size-[45px]"
+          />
+        </div>
+        <!-- notification -->
+
+        <!-- notification -->
+        <div
+          class="notifications flex cursor-pointer gap-[13px] rounded-lg p-4 md:gap-[19px] md:pb-[17px] md:pl-5 md:pt-[18px]"
+        >
+          <img
+            src="./images/avatar-nathan-peterson.webp"
+            alt="avatar nathan peterson"
+            class="size-[39px] rounded-full border border-black/5 md:size-[45px]"
+          />
+          <div class="flex flex-col gap-[3px] md:gap-1">
+            <h2 class="text-sm font-medium text-dark-grayish-blue md:text-base">
+              <span
+                class="cursor-pointer font-extrabold text-very-dark-blue transition-colors hover:text-blue"
+                >Nathan Peterson</span
+              >&nbsp;&nbsp;reacted to your recent post&nbsp;&nbsp;<span
+                class="cursor-pointer font-bold transition-colors hover:text-blue"
+                >5 end-game strategies to increase your win rate</span
+              >
+            </h2>
+            <p class="text-sm font-medium text-grayish-blue md:text-base">
+              2 weeks ago
+            </p>
+          </div>
+        </div>
+        <!-- notification -->
+
+        <!-- notification -->
+        <div
+          class="notifications flex cursor-pointer gap-[13px] rounded-lg p-4 md:gap-[19px] md:pb-[17px] md:pl-5 md:pt-[18px]"
+        >
+          <img
+            src="./images/avatar-anna-kim.webp"
+            alt="avatar anna kim"
+            class="size-[39px] rounded-full border border-black/5 md:size-[45px]"
+          />
+          <div class="flex flex-col gap-[3px] md:gap-1">
+            <h2 class="text-sm font-medium text-dark-grayish-blue md:text-base">
+              <span
+                class="cursor-pointer font-extrabold text-very-dark-blue transition-colors hover:text-blue"
+                >Anna Kim</span
+              >&nbsp;&nbsp;left the group&nbsp;&nbsp;<span
+                class="cursor-pointer font-bold text-blue transition-all hover:font-extrabold"
+                >Chess Club</span
+              >
+            </h2>
+            <p class="text-sm font-medium text-grayish-blue md:text-base">
+              2 weeks ago
+            </p>
+          </div>
+        </div>
+        <!-- notification -->
+      </main>
+    </div>
+    <!-- container -->
+
     <script src="./src/index.js"></script>
   </body>
 </html>
